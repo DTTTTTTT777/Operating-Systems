@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<br>
+
+<head>
+  <meta charset="utf-8">
+  <title>Simulation of Memory Management Using Paging Mechanisms</title>
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="navbar-inner" style="background: rgb(247, 170, 196);">
+        <h1 class="text-center" style="color:white;">Simulation of Memory Management Using Paging Mechanisms [by dttttttt✌]</h1>
+      </div>
+    </div>
+  </header>
+
+  <br><br>
+  <main id="main">
+    <div style="display: flex;flex-direction: row;">
+      <div style="display: flex;flex-direction: column;">
+        <div class="choose-algorithm">
+          <h2>Choose Page Replacement Algorithm</h2>
+          <div style="text-align: left;">
+            <label for="fifo-ratio1">
+              <input type="radio" name="algorithm" id="FIFORatio" value="FIFO" checked> FIFO
+            </label>
+            <br><br>
+            <label for="lru-ratio">
+              <input type="radio" name="algorithm" id="LRURatio" value="LRU"> LRU
+            </label>
+            <br><br>
+          </div>
+        </div>
+
+        <div class="related-parameters">
+          <h2>Related Parameters</h2>
+          <h3>Memory Blocks：<span id="Memory_Blocks_Count">4</span></h3>
+          <h3>Total Instructions：<span id="Instructions_Count">320</span></h3>
+          <h3>Number of Instructions Per Page: <span id="Instructions_Count_Per_Page">10</span></h3>
+        </div>
+
+        <div class="simulation-result">
+          <h2>Simulation Results</h2>
+          <h3>Page Fault Count：<span id="Page_Fault_Count">NULL</span></h3>
+          <h3>Page Fault Rate：<span id="Page_Fault_Rate">NULL</span></h3>
+        </div>
+        <br>
+        <button id="Start_Simulation">Click to Start</button>
+        <button id="Clear">Clear</button>
+
+      </div>
+      <div style="display: flex;flex-direction: column;">
+        <div class="show">
+          <table class="presenting_table" id="simulation-information">
+            <colgroup>
+              <col style="width: 100px;">
+              <col style="width: 100px;">
+              <col style="width: 100px;">
+              <col style="width: 200px;">
+              <col style="width: 200px;">
+              <col style="width: 200px;">
+              <col style="width: 200px;">
+              <col style="width: 300px; ">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col" , style="font-size: 18px;">Sequence</th>
+                <th scope="col" , style="font-size: 18px;">Instruction</th>
+                <th scope="col" , style="font-size: 18px;">Next Instruction</th>
+                <th scope="col" , style="font-size: 18px;">Memory Block 1</th>
+                <th scope="col" , style="font-size: 18px;">Memory Block 2</th>
+                <th scope="col" , style="font-size: 18px;">Memory Block 3</th>
+                <th scope="col" , style="font-size: 18px;">Memory Block 4</th>
+                <th scope="col" , style="font-size: 18px;">Details</th>
+              </tr>
+            </thead>
+          </table>
+          <script>
+            var row = document.getElementById("simulation-information").insertRow()
+            row.insertCell(0).innerHTML = 0
+            row.insertCell(1).innerHTML = "NULL"
+            row.insertCell(2).innerHTML = "NULL"
+            row.insertCell(3).innerHTML = "Empty"
+            row.insertCell(4).innerHTML = "Empty"
+            row.insertCell(5).innerHTML = "Empty"
+            row.insertCell(6).innerHTML = "Empty"
+            row.insertCell(7).innerHTML = ""
+          </script>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <div class="footer">
+
+    Copyright © 2023, Duan Tingting 段婷婷 <br>
+    School of Software Engineering, Tongji University <br>
+    All Rights Reserved. <br>
+
+  </div>
+</body>
+
+</html>

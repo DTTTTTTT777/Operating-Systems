@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+html {
+  background: white;
+  font-family: 'Comic Sans MS', 'Lucida Sans', 'Lucida Sans Regular';
+  font-size: 11px;
+}
+
+
+table,
+th,
+td {
+  border: 2px solid pink;
+
+}
+
+table {
+  width: 95%;
+  margin: auto;
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  background-color: floralwhite;
+  color: palevioletred;
+  /*height: 100px;*/
+  height: 35px;
+  border-spacing: 0px;
+}
+
+th,
+td {
+  padding: 10px;
+  /*width: 180px;*/
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.show {
+  height: 700px;
+  overflow-y: scroll;
+  overflow-x: none;
+  text-align: center;
+}
+
+#memory_table {
+  width: 100%;
+  margin: auto;
+  /*height: 650px;*/
+  vertical-align: middle;
+}
+
+header {
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  font-size: large;
+  /*border-bottom: 3px double #00838F;*/
+}
+
+header * {
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: large;
+  /*text-align: center;*/
+  border-bottom: white solid 3px;
+}
+
+h3 {
+  color: white;
+  font-size: medium;
+  text-align: left;
+}
+
+.choose-algorithm {
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  background: pink;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+}
+
+.related-parameters {
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  background: pink;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: left;
+
+}
+
+.simulation-result {
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  background: pink;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-bottom: 7%;
+  padding-left: 2%;
+  padding-right: 2%;
+  float: right;
+}
+
+label {
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  text-align: left;
+}
+
+button {
+  box-shadow: 3px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  background: PaleVioletRed;
+  border-radius: 15px;
+  border-color: transparent;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 5%;
+  margin-left: 10px;
+}
+
+.footer {
+  display: inline-block;
+  vertical-align: middle;
+  color: PaleVioletRed;
+}
